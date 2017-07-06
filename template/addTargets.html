@@ -9,7 +9,7 @@
             <thead>
                 <tr>
                     <th><label for=""><input type="checkbox" id="checkall" ng-click="checkAll()"></label></th>
-                    <th style="width:5%">序号</th>
+                    <th style="width:3%; text-align: left;">序号</th>
                     <th style="width:10%">类型</th>
                     <th style="width:36%">地址</th>
                     <th>插件数量</th>
@@ -34,7 +34,7 @@
             添加目标
             <div class="modal-content-con1">
                 <div class="group clearfix">
-                    <label for="" class="fn-left mt-5">添加方式:</label>
+                    <label for="" class="fn-left mt-5 width-12">添加方式:</label>
                     <input type="radio" name="addType" checked id="oneAdd" ng-click="oneChoose()">单次添加
                     <input type="radio" name="addType" id="manyAdd" ng-click="manyChoose()">批量添加
                     <input type="radio" name="addType" id="folderAdd" ng-click="folderAdd()">文件导入
@@ -42,12 +42,12 @@
                 <div class="change-part1">
                     <div class="group clearfix">
                         <label for="" class="fn-left mt-5 width-12">目标地址:</label>
-                        <input type="text" class="input-control fn-left tag-47 height-30" id="addressInput" placeholder="添加域名地址或IP地址" ng-model="targetData.addLocation"
+                        <input type="text" class="input-control fn-left tag-47 height-30 target-add" id="addressInput" placeholder="添加域名地址或IP地址" ng-model="targetData.addLocation"
                             ng-blur="checkAddress()">
                     </div>
                     <div class="group clearfix">
                         <label for="" class="fn-left mt-10 width-12">优先级:</label>
-                        <select class="input-control fn-left tag-20 height-30" ng-model="targetData.firstOne">
+                        <select class="input-control fn-left tag-20 height-30  youxian" ng-model="targetData.firstOne">
                     <option value="" style="display:none"></option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -59,18 +59,18 @@
                     </div>
                     <div class="group clearfix">
                         <label for="" class="fn-left width-12 mt-10">header信息:</label>
-                        <textarea name="" id="" cols="30" rows="10" class="input-control fn-left tag-47 height-80"></textarea>
+                        <textarea name="" id="" cols="30" rows="10" class="input-control fn-left tag-47 height-80 headerinfo"></textarea>
                     </div>
                 </div>
                 <div class="change-part2" style="display:none">
                     <div class="group clearfix">
                         <label for="" class="fn-left width-12 mt-10">目标地址:</label>
-                        <textarea name="" id="" cols="30" rows="10" class="input-control fn-left tag-70 height-200" placeholder="添加域名地址或IP地址，多个目标换行区分！"
+                        <textarea name="" id="" cols="30" rows="10" class="input-control fn-left tag-70 height-200 all-target" placeholder="添加域名地址或IP地址，多个目标换行区分！"
                             ng-model="targetData.addLocation"></textarea>
                     </div>
                 </div>
                 <div class="change-part3" style="display:none">
-                    <div class="input-folder">导入文件</div>
+                    <input class="input-folder" type="file" placeholder="导入文件">
                 </div>
             </div>
             <div class="btn-group operte save-option">
@@ -133,12 +133,19 @@
         <button>取消</button>
     </div>
     <div class="page-pagination fn-right clearfix">
-        <div class="fn-left page-total">共计数据:<span>{{tableData.length}}条</span></div>
-        <div class="page-page clearfix"><span class="fn-left arrow-left" id="pre"></span>
-            <button class="fn-left page-num">1/6&nbsp;&nbsp;&nbsp;&nbsp;∨</button>
-            <ul class="fn-left">
-                <li></li>
+        <div class="fn-left page-total">共计数据:<span>{{count}}条</span></div>
+        <div class="page-page clearfix">
+            <span class="fn-left arrow-left" ng-click="prevPage()"></span>
+            <button class="fn-left mission-btn page-num" ng-click="showPage()">{{choosedNum}}&nbsp;&nbsp;&nbsp;&nbsp;∨</button>
+            <span class="fn-left arrow-right" ng-click="nextPage()"></span>
+            <ul class="page-index">
+                <li ng-repeat="idx in pages track by $index" ng-click="choosedPage($index)"><span></span>{{idx}}&nbsp;/&nbsp;{{p_all_page}}</li>
             </ul>
-            <span class="fn-left arrow-right" id="next"></span></div>
+        </div>
+<!--    
+	<li ng-class="{true:'disabled'}[p_current==1]"><a href="javascript:void(0);" ng-click="load_page(p_current-1)">上一页</a></li>	
+	<li ng-repeat="page in pages" ng-class="{true:'active'}[p_current==page]"><a href="javascript:void(0);" ng-click="load_page(page)">{{ page }}</a></li>	
+	<li ng-class="{true:'disabled'}[p_current==p_all_page]"><a href="javascript:void(0);" ng-click="load_page(p_current+1)">下一页</a></li>	-->
+
     </div>
 </section>

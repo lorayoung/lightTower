@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/public.css">
+    <script type="text/javascript" src='../libs/jquery.min.js'></script>
+</head>
+
+<body>
+    <div class="report-container">
+        <div class="report-head">灯塔漏洞扫描系统安全评估报告</div>
+        <div class="report-body">
+            <div class="download"><img src="../images/download_folder.png">导出</div>
+            <div class="basic-info">
+                <h1>1.基本信息</h1>
+                <table>
+                    <tr>
+                        <td>任务名称：<span class="basic-content">电信测试</span></td>
+                        <td>安全等级：<span class="basic-content serious">严重</span></td>
+                    </tr>
+                    <tr>
+                        <td>扫描站点：<span class="basic-content">45</span></td>
+                        <td>负责人：<span class="basic-content">admin</span></td>
+                    </tr>
+                    <tr>
+                        <td>行业：<span class="basic-content">运营商</span></td>
+                        <td>生成时间：<span class="basic-content">2017-05-31 9：12</span></td>
+                    </tr>
+                    <tr class="bottom-col">
+                        <td colspan="2">漏洞详情：<span class="serious-coin">严重：5</span><span class="high-coin">高危：23</span><span class="middle-coin">中危：0</span><span class="low-coin">低危：56</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="leak-analy">
+                <h1>2.漏洞分析</h1>
+                <div class="lead-table">
+                    <div id="tableleft"></div>
+                    <div id="tableright"></div>
+                </div>
+            </div>
+            <div class="target-list">
+                <h1>3.目标列表</h1>
+                <ul class="target-list-body">
+                    <li class="target-list-head">
+                        <span>序号</span>
+                        <span>目标地址</span>
+                        <span>严重</span>
+                        <span>高危</span>
+                        <span>中危</span>
+                        <span>低危</span>
+                        <span>安全等级</span>
+                        <span>详情</span>
+                    </li>
+                    <li class="target-list-content">
+                        <span>1</span>
+                        <span>http://bbs.blueidea.com/thread-2962139-1-1.html</span>
+                        <span>2</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>严重</span>
+                        <i></i>
+                        <div class="hole-details">
+                            <ul class="hole-details-tabhead">
+                                <li class="hole-title">漏洞信息</li>
+                                <li class="assets-title">资产信息</li>
+                            </ul>
+                            <div class="hole-details-tabbody">
+                                <div class="hole-information">
+                                    <ul class="hole-details-tabbody-head">
+                                        <li>
+                                            <span>漏洞名称</span>
+                                            <span>影响url数</span>
+                                            <span>安全等级</span>
+                                            <span>详情</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="hole-details-tabbody-body">
+                                        <li class="hole-details-tabbody-content">
+                                            <span>表单CSRF攻击</span>
+                                            <span>2</span>
+                                            <span>严重</span>
+                                            <i></i>
+                                            <div class="hole-content">
+                                                <ul class="hole-tabhead">
+                                                    <li class="hole-tabhead-one">漏洞列表(共6条)</li>
+                                                    <li>漏洞详情</li>
+                                                    <li>漏洞描述</li>
+                                                    <li>修复方案</li>
+                                                </ul>
+                                                <div class="hole-tabbody">
+                                                    <ul class="hole-tabbody-list">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-details" style="display:none">
+                                                        <li>
+                                                            <span class="beg-style">请求方式：<p>get</p></span>
+                                                            <span>问题参数：<p>txtsearch</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断标准：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=y</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断详情：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>请求&相应：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>设置X-Frame-Options响应头 它有三个可选的值： DENY SAMEORIGIN ALLOW-FROM origin 当值为DENY时，浏览器会拒绝当前页面加载任何frame页面；若值为SAMEORIGIN，则frame页面的地址只能为同源域名下的页面；若值为ALLOW-FROM，则可以定义允许frame加载的页面地址。
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="assets-information" style="display:none">
+                                    <ul>
+                                        <li class="assets-information-basic">
+                                            <span>IP地址:<h3>172.16.4.76</h3></span>
+                                            <span>Whois信息:<a href="">点击查看</a></span>
+                                            <span>CMS信息:<h3>Joomla</h3></span>
+                                            <span>CDN厂商:<h3>北京快网科技</h3></span>
+                                            <span>中间件:<h3>Joboss</h3></span>
+                                            <span>Language:<h3>Servlet/2.5 JSP/2.1</h3></span>
+                                            <span>服务器信息:<h3>nginx/1.120</h3></span>
+                                            <span>企业备案:<h3>nginx/1.120</h3></span>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>端口:</span>
+                                            <i></i>
+                                            <div class="port-content" style="display:none">
+                                                <ul>
+                                                    <li class="port-content-head">
+                                                        <span>Port</span>
+                                                        <span>Server</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>旁站:</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>C段：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>子域名：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="target-list-content">
+                        <span>1</span>
+                        <span>http://bbs.blueidea.com/thread-2962139-1-1.html</span>
+                        <span>2</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>严重</span>
+                        <i></i>
+                        <div class="hole-details">
+                            <ul class="hole-details-tabhead">
+                                <li class="hole-title">漏洞信息</li>
+                                <li class="assets-title">资产信息</li>
+                            </ul>
+                            <div class="hole-details-tabbody">
+                                <div class="hole-information">
+                                    <ul class="hole-details-tabbody-head">
+                                        <li>
+                                            <span>漏洞名称</span>
+                                            <span>影响url数</span>
+                                            <span>安全等级</span>
+                                            <span>详情</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="hole-details-tabbody-body">
+                                        <li class="hole-details-tabbody-content">
+                                            <span>表单CSRF攻击</span>
+                                            <span>2</span>
+                                            <span>严重</span>
+                                            <i></i>
+                                            <div class="hole-content">
+                                                <ul class="hole-tabhead">
+                                                    <li class="hole-tabhead-one">漏洞列表(共6条)</li>
+                                                    <li>漏洞详情</li>
+                                                    <li>漏洞描述</li>
+                                                    <li>修复方案</li>
+                                                </ul>
+                                                <div class="hole-tabbody">
+                                                    <ul class="hole-tabbody-list">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-details" style="display:none">
+                                                        <li>
+                                                            <span class="beg-style">请求方式：<p>get</p></span>
+                                                            <span>问题参数：<p>txtsearch</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断标准：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=y</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断详情：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>请求&相应：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>设置X-Frame-Options响应头 它有三个可选的值： DENY SAMEORIGIN ALLOW-FROM origin 当值为DENY时，浏览器会拒绝当前页面加载任何frame页面；若值为SAMEORIGIN，则frame页面的地址只能为同源域名下的页面；若值为ALLOW-FROM，则可以定义允许frame加载的页面地址。
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="assets-information" style="display:none">
+                                    <ul>
+                                        <li class="assets-information-basic">
+                                            <span>IP地址:<h3>172.16.4.76</h3></span>
+                                            <span>Whois信息:<a href="">点击查看</a></span>
+                                            <span>CMS信息:<h3>Joomla</h3></span>
+                                            <span>CDN厂商:<h3>北京快网科技</h3></span>
+                                            <span>中间件:<h3>Joboss</h3></span>
+                                            <span>Language:<h3>Servlet/2.5 JSP/2.1</h3></span>
+                                            <span>服务器信息:<h3>nginx/1.120</h3></span>
+                                            <span>企业备案:<h3>nginx/1.120</h3></span>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>端口:</span>
+                                            <i></i>
+                                            <div class="port-content" style="display:none">
+                                                <ul>
+                                                    <li class="port-content-head">
+                                                        <span>Port</span>
+                                                        <span>Server</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>旁站:</span>
+                                            <i></i>
+                                            <div class="pang-content assets" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>C段：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>子域名：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                        <li class="target-list-content">
+                        <span>1</span>
+                        <span>http://bbs.blueidea.com/thread-2962139-1-1.html</span>
+                        <span>2</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>严重</span>
+                        <i></i>
+                        <div class="hole-details">
+                            <ul class="hole-details-tabhead">
+                                <li class="hole-title">漏洞信息</li>
+                                <li class="assets-title">资产信息</li>
+                            </ul>
+                            <div class="hole-details-tabbody">
+                                <div class="hole-information">
+                                    <ul class="hole-details-tabbody-head">
+                                        <li>
+                                            <span>漏洞名称</span>
+                                            <span>影响url数</span>
+                                            <span>安全等级</span>
+                                            <span>详情</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="hole-details-tabbody-body">
+                                        <li class="hole-details-tabbody-content">
+                                            <span>表单CSRF攻击</span>
+                                            <span>2</span>
+                                            <span>严重</span>
+                                            <i></i>
+                                            <div class="hole-content">
+                                                <ul class="hole-tabhead">
+                                                    <li class="hole-tabhead-one">漏洞列表(共6条)</li>
+                                                    <li>漏洞详情</li>
+                                                    <li>漏洞描述</li>
+                                                    <li>修复方案</li>
+                                                </ul>
+                                                <div class="hole-tabbody">
+                                                    <ul class="hole-tabbody-list">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-details" style="display:none">
+                                                        <li>
+                                                            <span class="beg-style">请求方式：<p>get</p></span>
+                                                            <span>问题参数：<p>txtsearch</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断标准：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=y</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断详情：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>请求&相应：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>设置X-Frame-Options响应头 它有三个可选的值： DENY SAMEORIGIN ALLOW-FROM origin 当值为DENY时，浏览器会拒绝当前页面加载任何frame页面；若值为SAMEORIGIN，则frame页面的地址只能为同源域名下的页面；若值为ALLOW-FROM，则可以定义允许frame加载的页面地址。
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="assets-information" style="display:none">
+                                    <ul>
+                                        <li class="assets-information-basic">
+                                            <span>IP地址:<h3>172.16.4.76</h3></span>
+                                            <span>Whois信息:<a href="">点击查看</a></span>
+                                            <span>CMS信息:<h3>Joomla</h3></span>
+                                            <span>CDN厂商:<h3>北京快网科技</h3></span>
+                                            <span>中间件:<h3>Joboss</h3></span>
+                                            <span>Language:<h3>Servlet/2.5 JSP/2.1</h3></span>
+                                            <span>服务器信息:<h3>nginx/1.120</h3></span>
+                                            <span>企业备案:<h3>nginx/1.120</h3></span>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>端口:</span>
+                                            <i></i>
+                                            <div class="port-content" style="display:none">
+                                                <ul>
+                                                    <li class="port-content-head">
+                                                        <span>Port</span>
+                                                        <span>Server</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>旁站:</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>C段：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>子域名：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                        <li class="target-list-content">
+                        <span>1</span>
+                        <span>http://bbs.blueidea.com/thread-2962139-1-1.html</span>
+                        <span>2</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>严重</span>
+                        <i></i>
+                        <div class="hole-details">
+                            <ul class="hole-details-tabhead">
+                                <li class="hole-title">漏洞信息</li>
+                                <li class="assets-title">资产信息</li>
+                            </ul>
+                            <div class="hole-details-tabbody">
+                                <div class="hole-information">
+                                    <ul class="hole-details-tabbody-head">
+                                        <li>
+                                            <span>漏洞名称</span>
+                                            <span>影响url数</span>
+                                            <span>安全等级</span>
+                                            <span>详情</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="hole-details-tabbody-body">
+                                        <li class="hole-details-tabbody-content">
+                                            <span>表单CSRF攻击</span>
+                                            <span>2</span>
+                                            <span>严重</span>
+                                            <i></i>
+                                            <div class="hole-content">
+                                                <ul class="hole-tabhead">
+                                                    <li class="hole-tabhead-one">漏洞列表(共6条)</li>
+                                                    <li>漏洞详情</li>
+                                                    <li>漏洞描述</li>
+                                                    <li>修复方案</li>
+                                                </ul>
+                                                <div class="hole-tabbody">
+                                                    <ul class="hole-tabbody-list">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-details" style="display:none">
+                                                        <li>
+                                                            <span class="beg-style">请求方式：<p>get</p></span>
+                                                            <span>问题参数：<p>txtsearch</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断标准：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=y</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断详情：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>请求&相应：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>设置X-Frame-Options响应头 它有三个可选的值： DENY SAMEORIGIN ALLOW-FROM origin 当值为DENY时，浏览器会拒绝当前页面加载任何frame页面；若值为SAMEORIGIN，则frame页面的地址只能为同源域名下的页面；若值为ALLOW-FROM，则可以定义允许frame加载的页面地址。
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="assets-information" style="display:none">
+                                    <ul>
+                                        <li class="assets-information-basic">
+                                            <span>IP地址:<h3>172.16.4.76</h3></span>
+                                            <span>Whois信息:<a href="">点击查看</a></span>
+                                            <span>CMS信息:<h3>Joomla</h3></span>
+                                            <span>CDN厂商:<h3>北京快网科技</h3></span>
+                                            <span>中间件:<h3>Joboss</h3></span>
+                                            <span>Language:<h3>Servlet/2.5 JSP/2.1</h3></span>
+                                            <span>服务器信息:<h3>nginx/1.120</h3></span>
+                                            <span>企业备案:<h3>nginx/1.120</h3></span>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>端口:</span>
+                                            <i></i>
+                                            <div class="port-content" style="display:none">
+                                                <ul>
+                                                    <li class="port-content-head">
+                                                        <span>Port</span>
+                                                        <span>Server</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>旁站:</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>C段：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>子域名：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                        <li class="target-list-content">
+                        <span>1</span>
+                        <span>http://bbs.blueidea.com/thread-2962139-1-1.html</span>
+                        <span>2</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>严重</span>
+                        <i></i>
+                        <div class="hole-details">
+                            <ul class="hole-details-tabhead">
+                                <li class="hole-title">漏洞信息</li>
+                                <li class="assets-title">资产信息</li>
+                            </ul>
+                            <div class="hole-details-tabbody">
+                                <div class="hole-information">
+                                    <ul class="hole-details-tabbody-head">
+                                        <li>
+                                            <span>漏洞名称</span>
+                                            <span>影响url数</span>
+                                            <span>安全等级</span>
+                                            <span>详情</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="hole-details-tabbody-body">
+                                        <li class="hole-details-tabbody-content">
+                                            <span>表单CSRF攻击</span>
+                                            <span>2</span>
+                                            <span>严重</span>
+                                            <i></i>
+                                            <div class="hole-content">
+                                                <ul class="hole-tabhead">
+                                                    <li class="hole-tabhead-one">漏洞列表(共6条)</li>
+                                                    <li>漏洞详情</li>
+                                                    <li>漏洞描述</li>
+                                                    <li>修复方案</li>
+                                                </ul>
+                                                <div class="hole-tabbody">
+                                                    <ul class="hole-tabbody-list">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-details" style="display:none">
+                                                        <li>
+                                                            <span class="beg-style">请求方式：<p>get</p></span>
+                                                            <span>问题参数：<p>txtsearch</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断标准：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=y</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断详情：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>请求&相应：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>设置X-Frame-Options响应头 它有三个可选的值： DENY SAMEORIGIN ALLOW-FROM origin 当值为DENY时，浏览器会拒绝当前页面加载任何frame页面；若值为SAMEORIGIN，则frame页面的地址只能为同源域名下的页面；若值为ALLOW-FROM，则可以定义允许frame加载的页面地址。
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="assets-information" style="display:none">
+                                    <ul>
+                                        <li class="assets-information-basic">
+                                            <span>IP地址:<h3>172.16.4.76</h3></span>
+                                            <span>Whois信息:<a href="">点击查看</a></span>
+                                            <span>CMS信息:<h3>Joomla</h3></span>
+                                            <span>CDN厂商:<h3>北京快网科技</h3></span>
+                                            <span>中间件:<h3>Joboss</h3></span>
+                                            <span>Language:<h3>Servlet/2.5 JSP/2.1</h3></span>
+                                            <span>服务器信息:<h3>nginx/1.120</h3></span>
+                                            <span>企业备案:<h3>nginx/1.120</h3></span>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>端口:</span>
+                                            <i></i>
+                                            <div class="port-content pang-content" style="display:none">
+                                                <ul>
+                                                    <li class="port-content-head">
+                                                        <span>Port</span>
+                                                        <span>Server</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>旁站:</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>C段：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>子域名：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                        <li class="target-list-content">
+                        <span>1</span>
+                        <span>http://bbs.blueidea.com/thread-2962139-1-1.html</span>
+                        <span>2</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>严重</span>
+                        <i></i>
+                        <div class="hole-details">
+                            <ul class="hole-details-tabhead">
+                                <li class="hole-title">漏洞信息</li>
+                                <li class="assets-title">资产信息</li>
+                            </ul>
+                            <div class="hole-details-tabbody">
+                                <div class="hole-information">
+                                    <ul class="hole-details-tabbody-head">
+                                        <li>
+                                            <span>漏洞名称</span>
+                                            <span>影响url数</span>
+                                            <span>安全等级</span>
+                                            <span>详情</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="hole-details-tabbody-body">
+                                        <li class="hole-details-tabbody-content">
+                                            <span>表单CSRF攻击</span>
+                                            <span>2</span>
+                                            <span>严重</span>
+                                            <i></i>
+                                            <div class="hole-content">
+                                                <ul class="hole-tabhead">
+                                                    <li class="hole-tabhead-one">漏洞列表(共6条)</li>
+                                                    <li>漏洞详情</li>
+                                                    <li>漏洞描述</li>
+                                                    <li>修复方案</li>
+                                                </ul>
+                                                <div class="hole-tabbody">
+                                                    <ul class="hole-tabbody-list">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-details" style="display:none">
+                                                        <li>
+                                                            <span class="beg-style">请求方式：<p>get</p></span>
+                                                            <span>问题参数：<p>txtsearch</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断标准：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=y</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断详情：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>请求&相应：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>设置X-Frame-Options响应头 它有三个可选的值： DENY SAMEORIGIN ALLOW-FROM origin 当值为DENY时，浏览器会拒绝当前页面加载任何frame页面；若值为SAMEORIGIN，则frame页面的地址只能为同源域名下的页面；若值为ALLOW-FROM，则可以定义允许frame加载的页面地址。
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="assets-information" style="display:none">
+                                    <ul>
+                                        <li class="assets-information-basic">
+                                            <span>IP地址:<h3>172.16.4.76</h3></span>
+                                            <span>Whois信息:<a href="">点击查看</a></span>
+                                            <span>CMS信息:<h3>Joomla</h3></span>
+                                            <span>CDN厂商:<h3>北京快网科技</h3></span>
+                                            <span>中间件:<h3>Joboss</h3></span>
+                                            <span>Language:<h3>Servlet/2.5 JSP/2.1</h3></span>
+                                            <span>服务器信息:<h3>nginx/1.120</h3></span>
+                                            <span>企业备案:<h3>nginx/1.120</h3></span>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>端口:</span>
+                                            <i></i>
+                                            <div class="port-content" style="display:none">
+                                                <ul>
+                                                    <li class="port-content-head">
+                                                        <span>Port</span>
+                                                        <span>Server</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>旁站:</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>C段：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>子域名：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                        <li class="target-list-content">
+                        <span>1</span>
+                        <span>http://bbs.blueidea.com/thread-2962139-1-1.html</span>
+                        <span>2</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>严重</span>
+                        <i></i>
+                        <div class="hole-details">
+                            <ul class="hole-details-tabhead">
+                                <li class="hole-title">漏洞信息</li>
+                                <li class="assets-title">资产信息</li>
+                            </ul>
+                            <div class="hole-details-tabbody">
+                                <div class="hole-information">
+                                    <ul class="hole-details-tabbody-head">
+                                        <li>
+                                            <span>漏洞名称</span>
+                                            <span>影响url数</span>
+                                            <span>安全等级</span>
+                                            <span>详情</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="hole-details-tabbody-body">
+                                        <li class="hole-details-tabbody-content">
+                                            <span>表单CSRF攻击</span>
+                                            <span>2</span>
+                                            <span>严重</span>
+                                            <i></i>
+                                            <div class="hole-content">
+                                                <ul class="hole-tabhead">
+                                                    <li class="hole-tabhead-one">漏洞列表(共6条)</li>
+                                                    <li>漏洞详情</li>
+                                                    <li>漏洞描述</li>
+                                                    <li>修复方案</li>
+                                                </ul>
+                                                <div class="hole-tabbody">
+                                                    <ul class="hole-tabbody-list">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yes&aid=%7Bd</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-details" style="display:none">
+                                                        <li>
+                                                            <span class="beg-style">请求方式：<p>get</p></span>
+                                                            <span>问题参数：<p>txtsearch</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断标准：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=yhttp://171.14.99.24 %20name='phpurl'/%7D/count.php?view=y</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>判断详情：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                        <li>
+                                                            <span>请求&相应：<p>^#*#&*&@(*@*)_@()_*@*#(*()*@</p></span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=http://171.14.99.24 %20name='phpurl'/%7D/count.php?view=</li>
+                                                    </ul>
+                                                    <ul class="hole-tabbody-script" style="display:none">
+                                                        <li>设置X-Frame-Options响应头 它有三个可选的值： DENY SAMEORIGIN ALLOW-FROM origin 当值为DENY时，浏览器会拒绝当前页面加载任何frame页面；若值为SAMEORIGIN，则frame页面的地址只能为同源域名下的页面；若值为ALLOW-FROM，则可以定义允许frame加载的页面地址。
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="assets-information" style="display:none">
+                                    <ul>
+                                        <li class="assets-information-basic">
+                                            <span>IP地址:<h3>172.16.4.76</h3></span>
+                                            <span>Whois信息:<a href="">点击查看</a></span>
+                                            <span>CMS信息:<h3>Joomla</h3></span>
+                                            <span>CDN厂商:<h3>北京快网科技</h3></span>
+                                            <span>中间件:<h3>Joboss</h3></span>
+                                            <span>Language:<h3>Servlet/2.5 JSP/2.1</h3></span>
+                                            <span>服务器信息:<h3>nginx/1.120</h3></span>
+                                            <span>企业备案:<h3>nginx/1.120</h3></span>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>端口:</span>
+                                            <i></i>
+                                            <div class="port-content" style="display:none">
+                                                <ul>
+                                                    <li class="port-content-head">
+                                                        <span>Port</span>
+                                                        <span>Server</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                    <li class="port-content-body">
+                                                        <span>53</span>
+                                                        <span>tcpwrapped</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>旁站:</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>C段：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="assets-information-content">
+                                            <span>子域名：</span>
+                                            <i></i>
+                                            <div class="pang-content" style="display:none">
+                                                <ul>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                    <li>172.16.3.677</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalog">
+                <h1>目录</h1>
+                <ul>
+                    <li><a href="">1.基本信息</a></li>
+                    <li><a href="">2.漏洞分析</a></li>
+                    <li><a href="">3.目标列表</a></li>
+                </ul>
+                <div class="quick-click"><span class="quick-click-left">全部展开</span><span class="line"></span><span class="quick-click-right">全部缩起</span></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src='../libs/echarts.min.js'></script>
+    <script type="text/javascript" src='../js/table1.js'></script>
+    <script type="text/javascript" src='../js/table2.js'></script>
+    <script type="text/javascript" src='../js/report.js'></script>
+</body>
+
+</html>

@@ -49,20 +49,19 @@
                         <div class="line fn-left clearfix ml-100 tag-25">
                             <label for="" class="fn-left">爆发时间:</label>
                             <input type="text" class="input-control height-30 fn-left tag-70 dateset" readonly ng-click="datePicker()">
-                            <span
-                                class="datepicture"></span>
+                            <span class="datepicture"></span>
                         </div>
                     </div>
                     <div class="group">
                         <label for="">POC内容:</label>
-                        <textarea name="" id="" cols="30" rows="10" class="input-control tag-91 height-80 textarea-set"></textarea>
+                        <textarea name="" id="" cols="30" rows="10" class="input-control tag-89 height-80 textarea-set"></textarea>
                     </div>
-                    <div class="group clearfix">
-                        <div class="line fn-left tag-47">
+                    <div class="group clearfix ml-set-30">
+                        <div class="fn-left tag-47">
                             <label for="">漏洞说明:</label>
                             <textarea name="" id="" cols="30" rows="10" class="input-control height-80 textarea-set tag-91"></textarea>
                         </div>
-                        <div class="line fn-left tag-47 ml-21">
+                        <div class="fn-left tag-47 ml-set-30">
                             <label for="">修复方案:</label>
                             <textarea name="" id="" cols="30" rows="10" class="input-control height-80 textarea-set tag-91"></textarea>
                         </div>
@@ -75,7 +74,25 @@
             </div>
 
             <div class="myPlugin" ng-show="vm.activeTab ==2">
-                w
+                <div class="myplugin-header"><span class="plugin-attention"></span>该处只显示用户创建的插件集，系统自带插件当前无权限修改！</div>
+                <div class="myplugin-container">
+                    <ul class="clearfix">
+                        <li ng-repeat="item in pluginData track by $index" class="tag-30 fn-left myplugin-container-li"><span class="plugin-ins"  ng-click="showPlugin($index)">{{item.pluginName}}</span> <span class="{{bgcArr[$index]}} bug-box1">{{item.pluginCondition}}</span>
+                            <span
+                                class="del-plu fn-right span-del" ng-click="delSpan($index)">×</span>
+                                <ul class="plugin-detail-content-ul" style="display:none">
+                                    <li><span>漏洞说明:</span><span>{{item.pluginDetail[0].pluginBugState}}</span></li>
+                                    <li><span>影响版本:</span><span>{{item.pluginDetail[0].affectVersion}}</span></li>
+                                    <li><span>影响组件:</span><span>{{item.pluginDetail[0].affectCom}}</span></li>
+                                    <li><span>CVE编号:</span><span>{{item.pluginDetail[0].CVENum}}</span></li>
+                                    <li><span>爆发时间:</span><span>{{item.pluginDetail[0].boomDate}}</span></li>
+                                    <li><span>更新时间:</span><span>{{item.pluginDetail[0].updateDate}}</span></li>
+                                    <li><span>危险等级:</span><span>{{item.pluginDetail[0].riskLevel}}</span></li>
+                                    <li><span>修复方案:</span><span>{{item.pluginDetail[0].repireWay}}</span></li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

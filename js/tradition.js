@@ -146,5 +146,11 @@ tradition.controller('tradition', function tradition($scope, $http, $filter) {
            $("input[name='checksingle']").attr("checked",false); 
         }
 
+
+    //报告页面
+    $scope.openReport = function(){
+       window.location.href=("../template/report.html")
+    }
+
     
 });

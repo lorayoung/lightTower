@@ -36,7 +36,7 @@
 <script src="js/missionCreate.js"></script>
 <script type="text/javascript" src='js/addTarget.js'></script>
 <script src="js/addPlugins.js"></script>
-
+<script src="js/personalCenter.js"></script>
 
 <body ng-app="myApp">
     <nav class="navbar navbar-bgc">
@@ -45,7 +45,7 @@
         <ul class="nav fn-right">
             <li class="navli"> 用户
                 <ul class="hover-box-user">
-                    <li><span class="admin">admin</span><span class="admin-auth">[管理员]</span></li>
+                    <li ui-sref="personalCenter"><span class="admin">admin</span><span class="admin-auth">[管理员]</span></li>
                     <li>最近登录:<span>2017-06-05</span></li>
                 </ul>
             </li>
@@ -135,13 +135,14 @@
         $('.search-img').on('click', function () {
             alert('搜索')
         });
-        //input框hover变色
-        $('.search-img').mouseover(function () {
-            $('input').css('background-color', '#fff')
-        });
-        $('.search-img').mouseout(function () {
-            $('input').css('background-color', '#9b9b9b')
-        });
+        // input框hover变色
+        // $('.navli').mouseover(function () {
+        //     $(this).children('ul').show()
+        // });
+        //  $('.navli').mouseleave(function () {
+        //     $(this).children('ul').hide()
+        // });
+
         //绑定回车
         $("input").keypress(function (e) {
             var eCode = e.keyCode ? e.keyCode : e.which ? e.which : e.charCode;
@@ -163,13 +164,13 @@
 
         if (("onhashchange" in window) && ((typeof document.documentMode === "undefined") || document.documentMode == 8)) {
             // 浏览器支持onhashchange事件  
-            window.onhashchange = hashChangeFire;  // TODO，对应新的hash执行的操作函数  
+            window.onhashchange = hashChangeFire;  // 对应新的hash执行的操作函数  
         } else {
             // 不支持则用定时器检测的办法  
             setInterval(function () {
-                var ischanged = isHashChanged();  // TODO，检测hash值或其中某一段是否更改的函数  
+                var ischanged = isHashChanged();  // 检测hash值或其中某一段是否更改的函数  
                 if (ischanged) {
-                    hashChangeFire();  // TODO，对应新的hash执行的操作函数  
+                    hashChangeFire();  //对应新的hash执行的操作函数  
                 }
             }, 150);
         }

@@ -118,6 +118,22 @@ myApp.config(function($breadcrumbProvider) {
                 parent:'homepage'
             }
         })
+        .state("personalCenter", {
+            url: "homepage/personalCenter",
+            templateUrl: "template/personalCenter.html",
+            controller: 'personalCenter',
+            ncyBreadcrumb: {
+                label: '信息中心',
+                parent:'homepage'
+            }
+        })//简化跳转 实际要传ID
+        // .state("report", {
+        //     url: "/report",
+        //     templateUrl: "template/report.html",
+        //     controller: 'report'
+        // })
+        
+        
         
 
 

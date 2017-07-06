@@ -11,6 +11,6 @@ angular.module('controller',[
     'fourthScanCtrl',
     'missionCreateCtrl',
     'addTargetCtrl',
-    'addPluginsCtrl'
-    
+    'addPluginsCtrl',
+    'personalCenterCtrl'
 ]);

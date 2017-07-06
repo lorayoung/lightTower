@@ -9,17 +9,17 @@
                     <th>漏洞类型</th>
                     <th>危害性</th>
                     <th>数量</th>
-                    <th>详情</th>
+                   <!--  <th>详情</th> -->
                 </tr>
             </thead>
             <tbody ng-repeat="item in list track by $index" class="table-body">
                 <tr>
-                    <td style="padding-left:0.18rem;text-align: center;"><span class="bug-box {{bgcArr[$index]}}">{{item.bugLevel}}</span></td>
-                    <td class="task-name">{{item.holeName}}</td>
+                    <td style="padding-left:0.3rem;text-align: center;"><span class="bug-box {{bgcArr[$index]}}">{{item.bugLevel}}</span></td>
+                    <td class="task-name" ui-sref="fourthScan">{{item.holeName}}</td>
                     <td>{{item.holeType}}</td>
                     <td>{{item.dangerous}}</td>
                     <td>{{item.amount}}</td>
-                    <td style="padding-left:5.5%"><span class="single-btn-detail single-detail fn-left" ui-sref="fourthScan"></span></td>
+                  <!--   <td style="padding-left:5.5%"><span class="single-btn-detail single-detail fn-left" ></span></td> -->
                 </tr>
             </tbody>
         </table>

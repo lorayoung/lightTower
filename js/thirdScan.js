@@ -82,7 +82,7 @@ thirdScan.controller('thirdScan', function thirdScan($scope, $http) {
                         $scope.bgc = "blue";
                         $scope.bgcArr.push($scope.bgc);
                     }
-
+                    
                 }(i))
 
             }
