@@ -6,30 +6,30 @@
                 <form action="">
                     <div class="group clearfix">
                         <label for="" class="fn-left label-left">用户名</label>
-                        <input type="text" class="input-control height-30 fn-left tag-81" placeholder="">
+                        <input type="text" class="input-control height-30 fn-left tag-77" placeholder="">
                     </div>
                     <div class="group clearfix">
                         <label for="" class="fn-left label-left">手机号</label>
-                        <input type="tel" class="input-control height-30 fn-left tag-81" placeholder="">
+                        <input type="tel" class="input-control height-30 fn-left tag-77" placeholder="">
                     </div>
                     <div class="group clearfix">
                         <label for="" class="fn-left label-left">邮箱</label>
-                        <input type="email" class="input-control height-30 fn-left tag-81" placeholder="">
+                        <input type="email" class="input-control height-30 fn-left tag-77" placeholder="">
                     </div>
                     <div class="group clearfix">
                         <label for="" class="fn-left label-left">部门</label>
-                        <input type="text" class="input-control height-30 fn-left tag-81" placeholder="">
+                        <input type="text" class="input-control height-30 fn-left tag-77" placeholder="">
                     </div>
                     <div class="group clearfix">
-                        <label for="" class="fn-left label-left">用户名</label>
-                        <input type="text" class="input-control height-30 fn-left tag-81" placeholder="" disabled>
-                    </div>
-                    <div class="btn-group operte info-btn">
-                        <button>提交</button>
-                        <button>取消</button>
+                        <label for="" class="fn-left label-left">权限</label>
+                        <input type="text" class="input-control height-30 fn-left tag-77" placeholder="" disabled>
                     </div>
                 </form>
-            </div>    
+                <div class="btn-group operte info-btn">
+                    <button>提交</button>
+                    <button>取消</button>
+                </div>
+            </div>
         </div>
         <div class="person-top-right fn-left">
             <div class="person-top-left-header">修改密码</div>
@@ -37,53 +37,148 @@
                 <form action="">
                     <div class="group clearfix">
                         <label for="" class="fn-left label-left">原密码</label>
-                        <input type="text" class="input-control height-30 fn-left tag-81" placeholder="">
+                        <input type="text" class="input-control height-30 fn-left tag-77" placeholder="">
                     </div>
                     <div class="group clearfix">
                         <label for="" class="fn-left label-left">新密码</label>
-                        <input type="text" class="input-control height-30 fn-left tag-81" placeholder="">
+                        <input type="text" class="input-control height-30 fn-left tag-77" placeholder="">
                     </div>
                     <div class="group clearfix">
                         <label for="" class="fn-left label-left">确认密码</label>
-                        <input type="text" class="input-control height-30 fn-left tag-81" placeholder="">
+                        <input type="text" class="input-control height-30 fn-left tag-77" placeholder="">
                     </div>
                     <div class="btn-group operte info-btn2">
                         <button>提交</button>
                         <button>取消</button>
                     </div>
                 </form>
-            </div>    
+            </div>
         </div>
     </div>
     <div class="personal-under">
         <div class="personal-under-header">
             用户列表
-            <button class="mission-btn fn-right"><span class="create-mission btn-img fn-left"></span>添加用户</button>
+            <button class="mission-btn fn-right mr-0 addAdmin"><span class="create-mission btn-img fn-left"></span>添加用户</button>
         </div>
         <div class="personal-under-body">
             <div class="table-mission table-person">
-        <table>
-            <thead>
-                <tr>
-                    <th>用户名</th>
-                    <th style="text-align:left;padding-left:5%">所属部门</th>
-                    <th style="padding-left:1%">手机号</th>
-                    <th>邮箱</th>
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody ng-repeat="item in personData" class="table-body">
-                <tr>
-                    <td class="task-name">{{item.administrator}}
-                    </td>
-                    <td>{{item.department}}</td>
-                    <td>{{item.telephone}}</td>
-                    <td>{{item.email}}</td>
-                    <td><span>修改</span><span ng-click="personData.splice($index,1)">删除</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>用户名</th>
+                            <th>所属部门</th>
+                            <th>手机号</th>
+                            <th>邮箱</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in personData" class="table-body">
+                            <td class="task-name">{{item.administrator}}
+                            </td>
+                            <td>{{item.department}}</td>
+                            <td>{{item.telephone}}</td>
+                            <td>{{item.email}}</td>
+                            <td><span class="updateAdmin">修改</span><span ng-click="personData.splice($index,1)">删除</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="addAdmin" style="display:none">
+            <div class="addmin-header">修改资料</div>
+            <div class="addmin-content">
+                <form action="">
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">权限设置:</label>
+                        <select name="" id="" class="input-control height-30 fn-left tag-47">
+                            <option value="">普通用户</option>
+                            <option value="">管理员</option>
+                            <option value="">超级管理员</option>
+                        </select>
+                    </div>
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">用户名:</label>
+                        <input type="text" class="input-control height-30 fn-left tag-47" placeholder="">
+                    </div> 
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">密码:</label>
+                        <input type="text" class="input-control height-30 fn-left tag-47" placeholder="" >
+                    </div>
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">手机号:</label>
+                        <input type="tel" class="input-control height-30 fn-left tag-47" placeholder="">
+                    </div>
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">邮箱:</label>
+                        <input type="email" class="input-control height-30 fn-left tag-47" placeholder="">
+                    </div>
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">部门:</label>
+                        <input type="text" class="input-control height-30 fn-left tag-47" placeholder="">
+                    </div>
+
+                </form>
+            </div>
+            <div class="btn-group operte info-btn">
+                <button>保存</button>
+                <button ng-click="closeAdd()">关闭</button>
+            </div>
+        </div>
+
+        <div id="updateAdmin" style="display:none">
+            <div class="addmin-header">添加用户</div>
+            <div class="addmin-content">
+                <form action="">
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">权限设置:</label>
+                        <select name="" id="" class="input-control height-30 fn-left tag-47" disabled>
+                            <option value="">普通用户</option>
+                            <option value="">管理员</option>
+                            <option value="">超级管理员</option>
+                        </select>
+                    </div>
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">用户名:</label>
+                        <input type="text" class="input-control height-30 fn-left tag-47" placeholder="" disabled>
+                    </div> 
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">密码:</label>
+                        <input type="text" class="input-control height-30 fn-left tag-47" placeholder="" >
+                    </div>
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">手机号:</label>
+                        <input type="tel" class="input-control height-30 fn-left tag-47" placeholder="">
+                    </div>
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">邮箱:</label>
+                        <input type="email" class="input-control height-30 fn-left tag-47" placeholder="">
+                    </div>
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">部门:</label>
+                        <input type="text" class="input-control height-30 fn-left tag-47" placeholder="">
+                    </div>
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">修改密码:</label>
+                        <span class="circle-mission fn-left change-pwd"  ng-click="cirleTime()">
+                    </div>
+                    <div class="pwd-show">
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">新密码:</label>
+                        <input type="text" class="input-control height-30 fn-left tag-47" placeholder="">
+                    </div>
+                    <div class="group clearfix">
+                        <label for="" class="fn-left add-label-left">确认密码:</label>
+                        <input type="text" class="input-control height-30 fn-left tag-47" placeholder="">
+                    </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="btn-group operte info-btn">
+                <button>保存</button>
+                <button ng-click="closeAdd()">关闭</button>
+            </div>
         </div>
     </div>
 </section>

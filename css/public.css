@@ -556,6 +556,14 @@ ul li{list-style: none}
     float: right;
     margin-left: 0.45rem;
 }
+.info-ul li span:nth-child(5){
+    cursor: pointer;
+    line-height: 0.26rem;
+    color: #1F8CB2;
+    font-weight: bold;
+    font-size: 0.12rem;
+    float: right;
+}
 .risk-num{
     color: #1f8cb2;
     margin-left: 0.06rem;
@@ -1023,6 +1031,7 @@ text-align: center;
 .tag-64{width: 64%}
 .tag-70{width: 70%}
 .tag-52{width: 52%}
+.tag-77{width: 77%}
 .tag-89{width: 89%;resize: none}
 .tag-91{width: 91%;resize: none}
 
@@ -1035,7 +1044,7 @@ text-align: center;
 
 margin-left: 0.5rem;
 }
-.create-content label{padding-top: 0.06rem;}
+.create-content label{padding-top: 0.11rem;}
 .option-section{
     padding: 0 0 0.33rem 0.36rem;
     background-color: #fff;
@@ -1053,7 +1062,7 @@ margin-left: 0.5rem;
 }
 .is-circle{
     display: block;
-    margin-top: 0.05rem;
+    margin-top: 0.12rem;
 }
 .scan-time{
     height: 0.3rem;
@@ -1086,6 +1095,12 @@ margin-left: 0.5rem;
     left: 516.109px;
 }
 .date{display: none}
+.time-period{
+    display: none;
+    margin-top: 0.12rem;
+    margin-bottom: 0.12rem;
+}
+.radio-s{vertical-align: text-top !important}
 .operte{
     margin-left: 16%
 }
@@ -1836,6 +1851,7 @@ margin:0 auto;  position: absolute; left: 74px; top: -11px; cursor: pointer;}*/
     margin-top: 0.1rem;
 }
 .info-btn{margin-left: 25%}
+.mr-0{margin-right: 0}
 .person-top-right{
     width: 45%;
     height: 40%;
@@ -1855,3 +1871,53 @@ margin:0 auto;  position: absolute; left: 74px; top: -11px; cursor: pointer;}*/
     margin: 0;
     margin-top: 0.2rem
 }
+.table-person  thead th:nth-child(1){
+    width: 10%;
+    text-align: center
+}
+.table-person  thead th:nth-child(2){
+    width: 15%;
+    text-align: center
+}
+.table-person  thead th:nth-child(3){
+    width: 15%;
+    text-align: center
+}
+.table-person  thead th:nth-child(4){
+    width: 20%;
+    text-align: center
+}
+.table-person tbody td{
+   text-align: center
+}
+.table-person tbody td:nth-child(5){
+   text-align: left;
+  
+}
+.table-person tbody td:nth-child(5) span{
+   text-align: left;
+   padding-left: 25%;
+   color: #64AEC9;
+   cursor: pointer
+}
+.layui-layer-content{background-color: #F0F0F0;}
+#addAdmin{
+    padding: 0.19rem 0.3rem 0.3rem 0.3rem;    
+}
+.addmin-header{
+    font-weight: bold;
+}
+.addmin-content{
+    margin-top: 0.15rem;
+    border: 1px solid #BABABA;
+    padding: 0 0 0.3rem 0.45rem
+}
+.add-label-left{
+    width: 20%;
+    margin-top: 0.07rem;
+}
+#updateAdmin{
+    padding: 0.19rem 0.3rem 0.3rem 0.3rem;
+}
+.change-pwd{margin-left: 7%}
+.pwd-show{display: none}

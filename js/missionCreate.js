@@ -17,12 +17,14 @@ missionCreate.controller('missionCreate', function missionCreate($scope,$state) 
         if ($scope.openOrClose) {
             $('.circle-mission').css('background', 'url(../images/scan-button-open.png) no-repeat');
             $scope.openOrClose = false;
-            $scope.result = '是'
+            $scope.result = '是';
+            $('.time-period').css("display","block")
         }
         else {
             $('.circle-mission').css('background', 'url(../images/scan-button-close.png) no-repeat');
             $scope.openOrClose = true;
-            $scope.result = '否'
+            $scope.result = '否';
+            $('.time-period').css("display","none")
         }
     }
     //是否在扫描结束后发送报告

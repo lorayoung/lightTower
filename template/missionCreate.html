@@ -40,9 +40,13 @@
                     </div>
                     <div class="clearfix mt-24">
                         <label for="" class="fn-left">周期任务： </label>
-                        <span class="circle-mission fn-left"  ng-click="cirleTime()"></span><span class="is-circle fn-left">{{result}}</span>
-                        <div></div>
+                        <span class="circle-mission fn-left"  ng-click="cirleTime()"></span><span class="is-circle fn-left">{{result}}</span>                       
                     </div>
+                    <div class="time-period">
+                            <label for=""><input type="radio" name="time-p" class="radio-s" checked>每天</label>
+                            <label for=""><input type="radio" name="time-p" class="radio-s">每周</label>
+                            <label for=""><input type="radio" name="time-p" class="radio-s">每月</label>
+                        </div>
                     <div class="mt-14">
                         <label for="" class=""><input type="checkbox" id="sendcheck" ng-click="sendReport()">是否在任务完成后自动发送扫描报告</label>
                         <input type="email" placeholder="接收人邮件地址" class="input-control tag-47 height-30 mt-14" id="emailinput" style="display:none">
