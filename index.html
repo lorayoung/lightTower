@@ -37,6 +37,8 @@
 <script type="text/javascript" src='js/addTarget.js'></script>
 <script src="js/addPlugins.js"></script>
 <script src="js/personalCenter.js"></script>
+<script src="js/netSetting.js"></script>
+<script src="js/deviceManage.js"></script>
 
 <body ng-app="myApp">
     <nav class="navbar navbar-bgc">
@@ -52,8 +54,8 @@
 
             <li class="navli">设置
                 <ul class="hover-box">
-                    <li>网络设置</li>
-                    <li>设备管理</li>
+                    <li ui-sref="netSetting">网络设置</li>
+                    <li ui-sref="deviceManage">设备管理</li>
                 </ul>
             </li>
             <li class="navli">帮助

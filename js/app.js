@@ -126,7 +126,26 @@ myApp.config(function($breadcrumbProvider) {
                 label: '信息中心',
                 parent:'homepage'
             }
-        })//简化跳转 实际要传ID
+        }).state("netSetting", {
+            url: "homepage/netSetting",
+            templateUrl: "template/netSetting.html",
+            controller: 'netSetting',
+            ncyBreadcrumb: {
+                label: '网络设置',
+                parent:'homepage'
+            }
+        })
+        .state("deviceManage", {
+            url: "homepage/deviceManage",
+            templateUrl: "template/deviceManage.html",
+            controller: 'deviceManage',
+            ncyBreadcrumb: {
+                label: '设备管理',
+                parent:'homepage'
+            }
+        })
+        
+        //简化跳转 实际要传ID
         // .state("report", {
         //     url: "/report",
         //     templateUrl: "template/report.html",

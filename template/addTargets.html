@@ -35,9 +35,12 @@
             <div class="modal-content-con1">
                 <div class="group clearfix">
                     <label for="" class="fn-left mt-5 width-12">添加方式:</label>
-                    <input type="radio" name="addType" checked id="oneAdd" ng-click="oneChoose()">单次添加
-                    <input type="radio" name="addType" id="manyAdd" ng-click="manyChoose()">批量添加
-                    <input type="radio" name="addType" id="folderAdd" ng-click="folderAdd()">文件导入
+                    <input type="radio" name="addType" checked id="oneAdd" ng-click="oneChoose()">
+                    <label for="oneAdd">单次添加</label>
+                    <input type="radio" name="addType" id="manyAdd" ng-click="manyChoose()">
+                    <label for="manyAdd">批量添加</label>
+                    <input type="radio" name="addType" id="folderAdd" ng-click="folderAdd()">
+                    <label for="folderAdd">文件导入</label>
                 </div>
                 <div class="change-part1">
                     <div class="group clearfix">
@@ -75,7 +78,7 @@
             </div>
             <div class="btn-group operte save-option">
                 <button id="saveTarget" ng-click="saveAdd()">保存</button>
-                <button>清空</button>
+                <button>取消</button>
             </div>
         </div>
         <div id="modal2" style="display:none" class="clearfix">

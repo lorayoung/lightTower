@@ -12,5 +12,7 @@ angular.module('controller',[
     'missionCreateCtrl',
     'addTargetCtrl',
     'addPluginsCtrl',
-    'personalCenterCtrl'
+    'personalCenterCtrl',
+    'netSettingCtrl',
+    'deviceManageCtrl'
 ]);
